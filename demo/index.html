@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="js-view">
+        <a href="doc.docx">Child</a>
+    </div>
+    <a href="doc.doc" class="js-view">No Child DOC</a><br />
+    <a href="doc.docx" class="js-view">No Child DOCX</a><br />
+    <a href="pdf.pdf" class="js-view">No Child PDF</a><br />
+    <a href="pdf.pdf" class="js-view"><span>No Child Span PDF</span></a><br />
+    <a href="doc.doc" class="js-view"><span>No Child <span>Span</span> DOC</span></a><br />
+    <a href="pdf.pdfx" class="js-view">No Child PDFX</a><br />
+    <a href="pdf.pdf">No Js view</a>
+</div>
+<a href="doc.doc"><span>No Container Span DOC</span></a><br />
+<script type="module">
+    import Viewer from './Viewer2.js';
+
+    const jsViewer = new Viewer();
+
+</script>
+</body>
+</html>
